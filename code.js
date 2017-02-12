@@ -49,7 +49,7 @@ function getStats(txt) {
 		sum = sum + nWords[i].length;
 		i++;
 	}
-	var aveWordLength = sum/(aWL+1);
+	var aveWordLength = (sum/(aWL+1));
 	
 	return {
         nChars: nChars.length,
@@ -58,8 +58,6 @@ function getStats(txt) {
         nLines: nLines.length,
 		NonEmptyLines: nNonEmptyLines.length,
         maxLineLength: Math.max(...lineLength),
-		a: sum,
-		b: aWL,
         averageWordLength: aveWordLength,
         palindromes: ["12321", "kayak", "mom"],
         longestWords: ["xxxxxxxxx", "123444444"],
