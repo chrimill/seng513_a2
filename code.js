@@ -8,9 +8,9 @@ function getStats(txt) {
 	nChars= input_str;
 	
 	nWords = input_str;
-	nWords = nWords.replace(/[,.!'+:-]+/g, " ");
+	nWords = nWords.replace(/[,.!'+:-]+/g, "");
 	nWords = nWords.replace(/\r\n|\r|\n|\t/g," ");
-	nWords = nWords.replace(/(^\s*)|(\s*$)/g," ");
+	nWords = nWords.replace(/(^\s*)|(\s*$)/g,"");
 	nWords = nWords.replace(/[ ]{2,}/g," ");
 	//nWords = nWords.replace(/\s{2,}/g," ");
 	nWords = nWords.split(' ');
@@ -49,7 +49,7 @@ function getStats(txt) {
 		sum = sum + nWords[i].length;
 		i++;
 	}
-	var aveWordLength = [sum/(aWL+1)];
+	var aveWordLength = sum/(aWL+1);
 	
 	return {
         nChars: nChars.length,
@@ -58,7 +58,7 @@ function getStats(txt) {
         nLines: nLines.length,
 		NonEmptyLines: nNonEmptyLines.length,
         maxLineLength: Math.max(...lineLength),
-        averageWordLength: 5.3,
+        averageWordLength: aveWordLength,
         palindromes: ["12321", "kayak", "mom"],
         longestWords: ["xxxxxxxxx", "123444444"],
         mostFrequentWords: ["hello(7)", "world(1)"]
