@@ -18,7 +18,7 @@ function getStats(txt) {
 	
 	nNonEmptyLines = input_str;
 	nNonEmptyLines = nNonEmptyLines.replace(" ", "");
-	nNonEmptyLines = nLines.length - (nNonEmptyLines.match(/\n(?=\n/g)) || []).length;
+	
 	
 	
 	
