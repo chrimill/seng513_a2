@@ -58,7 +58,9 @@ function getStats(txt) {
         nLines: nLines.length,
 		NonEmptyLines: nNonEmptyLines.length,
         maxLineLength: Math.max(...lineLength),
-        averageWordLength: sum aWL aveWordLength,
+		a: sum,
+		b: aWL,
+        averageWordLength: aveWordLength,
         palindromes: ["12321", "kayak", "mom"],
         longestWords: ["xxxxxxxxx", "123444444"],
         mostFrequentWords: ["hello(7)", "world(1)"]
