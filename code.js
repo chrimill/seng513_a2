@@ -35,6 +35,7 @@ function getStats(txt) {
         nChars: nChars.length,
         nWords: nWords.length,
         nLines: nLines.length,
+		nonEmptyLines
         nNonEmptyLines: nNonEmptyLines,
         averageWordLength: 3.3,
         maxLineLength: 33,
