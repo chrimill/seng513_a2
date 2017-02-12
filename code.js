@@ -8,10 +8,10 @@ function getStats(txt) {
 	nChars= input_str;
 	
 	nWords = input_str;
-	nWords = nWords.replace(/[,.!]+/g, ' ');
-	nWords = nWords.replace(/\r\n|\r|\n /g," ");
-	nWords = nWords.replace(/(^\s*)|(\s*$)/gi," ");
-	nWords = nWords.replace(/[ ]{2,}/gi," ");
+	nWords = nWords.replace(/[,.!']+/g, "");
+	nWords = nWords.replace(/\r\n|\r|\n/g," ");
+	nWords = nWords.replace(/\t/g," ");
+	nWords = nWords.replace(/\s+/g,' ');
 	nWords = nWords.split(' ');
 	
 	nLines = input_str;
