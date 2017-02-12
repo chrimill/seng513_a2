@@ -8,7 +8,7 @@ function getStats(txt) {
 	nChars= input_str;
 	
 	nWords = input_str;
-	nWords = nWords.replace(/\n /," ");
+	nWords = nWords.replace(/\r\n|\r|\n /g," ");
 	nWords = nWords.replace(/(^\s*)|(\s*$)/gi,"");
 	nWords = nWords.replace(/[ ]{2,}/gi," ");
 	nWords = nWords.split(' ');
@@ -16,17 +16,19 @@ function getStats(txt) {
 	nLines = input_str;
 	nLines = nLines.split(/\r\n|\r|\n/);
 	
-	nNonEmptyLines = input_str;
-	//nNonEmptyLines = nNonEmptyLines.replace(" ", "");
-	nNonEmptyLines = (nNonEmptyLines.match(/^[ \t]*$/gm) || []).length : 0,
-	
+	emptyLines = input_str;
+	//emptyLines = emptyLines.replace(/\n /g, "\n ");
+	//emptyLines = emptyLines.replace(" ", "");
+	var nEmptyLines = (emptyLines.match(/\n(?=\n/g)) || []).length;
+	//emptyLines = (emptyLines.match(/^[ \t]*$/gm) || []).length : 0;
+	//nNonEmptyLines = nLines.length - emptyLines.length;
 	
 	
 	return {
         nChars: nChars.length,
         nWords: nWords.length,
         nLines: nLines.length,
-        nNonEmptyLines: nNonEmptyLines,
+        nNonEmptyLines: nEmptyLines,
         averageWordLength: 3.3,
         maxLineLength: 33,
         palindromes: ["12321", "kayak", "mom"],
