@@ -45,11 +45,11 @@ function getStats(txt) {
 	var aWL = nWords.length;
 	var i=0;
 	var sum=0;
-	while (i<aWL){
-		sum = sum + nWords[i].length;
-		i++;
-	}
-	var aveWordLength = [sum/(aWL+1)];
+	//while (i<aWL){
+	//	sum = sum + nWords[i].length;
+	//	i++;
+	//}
+	//var aveWordLength = [sum/(aWL+1)];
 	
 	return {
         nChars: nChars.length,
@@ -58,7 +58,7 @@ function getStats(txt) {
         nLines: nLines.length,
 		NonEmptyLines: nNonEmptyLines.length,
         maxLineLength: Math.max(...lineLength),
-        averageWordLength: aveWordLength,
+        //averageWordLength: aveWordLength,
         palindromes: ["12321", "kayak", "mom"],
         longestWords: ["xxxxxxxxx", "123444444"],
         mostFrequentWords: ["hello(7)", "world(1)"]
