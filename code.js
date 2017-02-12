@@ -16,19 +16,18 @@ function getStats(txt) {
 	nLines = input_str;
 	nLines = nLines.split(/\r\n|\r|\n/);
 	
-	emptyLines = input_str;
+	//emptyLines = input_str;
 	//emptyLines = emptyLines.replace(/\n /g, "\n ");
-	//emptyLines = emptyLines.replace(" ", "");
-	var nEmptyLines = (emptyLines.match(/\n(?=\n/g)) || []).length;
-	//emptyLines = (emptyLines.match(/^[ \t]*$/gm) || []).length : 0;
-	//nNonEmptyLines = nLines.length - emptyLines.length;
+	//emptyLines = emptyLines.replace(" "|/\t/g, "");
+	//var nEmptyLines = emptyLines.split(/\r\n\r\n | \r\n\r | \r\n\n | \r\r\n /);
+	
 	
 	
 	return {
         nChars: nChars.length,
         nWords: nWords.length,
         nLines: nLines.length,
-        nNonEmptyLines: nEmptyLines,
+        nNonEmptyLines: nLines,
         averageWordLength: 3.3,
         maxLineLength: 33,
         palindromes: ["12321", "kayak", "mom"],
