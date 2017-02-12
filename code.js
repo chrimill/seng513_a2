@@ -42,19 +42,19 @@ function getStats(txt) {
 	};
 	
 
-	//var aWL = nWords.length;
-	//var i=0;
-	//var sum=0;
-	//while (i<aWL){
-	//	sum = sum + nWords[i].length;
-	//	i++;
-	//}
-	//var aveWordLength = [sum/(aWL+1)];
+	var aWL = nWords.length;
+	var i=0;
+	var sum=0;
+	while (i<aWL){
+		sum = sum + nWords[i].length;
+		i++;
+	}
+	var aveWordLength = [sum/(aWL+1)];
 	
 	return {
         nChars: nChars.length,
         nWords: nWords.length,
-		//Words: nWords,
+		Words: nWords,
         nLines: nLines.length,
 		NonEmptyLines: nNonEmptyLines.length,
         maxLineLength: Math.max(...lineLength),
