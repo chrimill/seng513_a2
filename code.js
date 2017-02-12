@@ -16,10 +16,10 @@ function getStats(txt) {
 	nLines = input_str;
 	nLines = nLines.split(/\r\n|\r|\n/);
 	
-	nonEmptyLines = input_str;
-	nonEmptyLines = nonEmptyLines.replace(" ", "");
-	nonEmptyLines = nonEmptyLines.replace(/\t/gm, "");
-	nonEmptyLines = nonEmptyLines.split(/\r\n|\r|\n/);
+//	nonEmptyLines = input_str;
+//	nonEmptyLines = nonEmptyLines.replace(" ", "");
+//	nonEmptyLines = nonEmptyLines.replace(/\t/gm, "");
+//	nonEmptyLines = nonEmptyLines.split(/\r\n|\r|\n/);
 //	nNonEmptyLines = [];
 //	var lines = nLines.length;
 //	var i=0;
