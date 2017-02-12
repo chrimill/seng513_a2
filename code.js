@@ -18,7 +18,7 @@ function getStats(txt) {
 	
 	nNonEmptyLines = input_str;
 	//nNonEmptyLines = nNonEmptyLines.replace(" ", "");
-	
+	nNonEmptyLines = (nNonEmptyLines.match(/^[ \t]*$/gm) || []).length : 0,
 	
 	
 	
@@ -26,7 +26,7 @@ function getStats(txt) {
         nChars: nChars.length,
         nWords: nWords.length,
         nLines: nLines.length,
-        nNonEmptyLines: nNonEmptyLines ? (nNonEmptyLines.match(/^[ \t]*$/gm) || []).length : 0,
+        nNonEmptyLines: nNonEmptyLines,
         averageWordLength: 3.3,
         maxLineLength: 33,
         palindromes: ["12321", "kayak", "mom"],
