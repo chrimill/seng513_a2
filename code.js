@@ -36,13 +36,16 @@ function getStats(txt) {
 	while (i<lineLength.length) {
 		lineLength[i]= lineLength[i].length;
 	};
+	
+	
+	
 	return {
         nChars: nChars.length,
         nWords: nWords.length,
         nLines: nLines.length,
 		NonEmptyLines: nNonEmptyLines.length,
         averageWordLength: 3.9,
-        maxLineLength: Math.max.apply(Math, lineLength),
+        maxLineLength: lineLength.max(),
         palindromes: ["12321", "kayak", "mom"],
         longestWords: ["xxxxxxxxx", "123444444"],
         mostFrequentWords: ["hello(7)", "world(1)"]
