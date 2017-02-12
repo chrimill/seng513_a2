@@ -10,8 +10,10 @@ function getStats(txt) {
 	nWords = input_str;
 	nWords = nWords.replace(/[,.!']+/g, "");
 	nWords = nWords.replace(/\r\n|\r|\n/g," ");
-	nWords = nWords.replace(/\t/g," ");
-	nWords = nWords.replace(/\s+/g,' ');
+	nWords = nWords.replace(/(^\s*)|(\s*$)/g,"");
+	nWords = nWords.replace(/[ ]{2,}/g," ");
+	//nWords = nWords.replace(/\s{2,}/g," ");
+	
 	nWords = nWords.split(' ');
 	
 	nLines = input_str;
@@ -44,7 +46,7 @@ function getStats(txt) {
 	
 	return {
         nChars: nChars.length,
-        nWords: nWords.length,
+        nWords: nWords,//.length,
         nLines: nLines.length,
 		NonEmptyLines: nNonEmptyLines.length,
         maxLineLength: Math.max(...lineLength),
