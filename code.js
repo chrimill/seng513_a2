@@ -24,8 +24,8 @@ function getStats(txt) {
 	var lines = nLines.length;
 	var i=0;
 	while (i<lines) {
-		if (nonEmptyLines[i]!== ""){
-			nNonEmptyLines.push("");
+		if (nonEmptyLines[i]!= ""){
+			nNonEmptyLines.push("1");
 		};
 		i++;
 	};
