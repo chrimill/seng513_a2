@@ -16,17 +16,19 @@ function getStats(txt) {
 	nLines = input_str;
 	nLines = nLines.split(/\r\n|\r|\n/);
 	
-	nonEmptyLines = nLines;
-	nonEmptyLines = nonEmptyLines.replace(" "|/\t/g, "");
-	var nNonEmptyLines = 0;
-	var lines = nLines.length;
-	var i=0;
-	while (i<lines) {
-		if (nonEmptyLines[i]!== ""){
-			nNonEmptyLines++;
-		};
-		i++;
-	};
+	nonEmptyLines = input_str;
+	nonEmptyLines = nonEmptyLines.replace(" ", "");
+	nonEmptyLines = nonEmptyLines.replace(/\t/gm, "");
+	nonEmptyLines = nonEmptyLines.split(/\r\n|\r|\n/);
+//	var nNonEmptyLines = 0;
+	//var lines = nLines.length;
+//	var i=0;
+//	while (i<lines) {
+//		if (nonEmptyLines[i]!== ""){
+//			nNonEmptyLines++;
+//		};
+//		i++;
+//	};
 	
 	
 	
@@ -35,8 +37,8 @@ function getStats(txt) {
         nChars: nChars.length,
         nWords: nWords.length,
         nLines: nLines.length,
-		nonEmptyLines
-        nNonEmptyLines: nNonEmptyLines,
+		nonEmptyLines: nonEmptyLines,
+        //nNonEmptyLines: nNonEmptyLines,
         averageWordLength: 3.3,
         maxLineLength: 33,
         palindromes: ["12321", "kayak", "mom"],
