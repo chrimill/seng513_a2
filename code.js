@@ -20,15 +20,15 @@ function getStats(txt) {
 	nonEmptyLines = nonEmptyLines.replace(" ", "");
 	nonEmptyLines = nonEmptyLines.replace(/\t/gm, "");
 	nonEmptyLines = nonEmptyLines.split(/\r\n|\r|\n/);
-//	var nNonEmptyLines = 0;
-	//var lines = nLines.length;
-//	var i=0;
-//	while (i<lines) {
-//		if (nonEmptyLines[i]!== ""){
-//			nNonEmptyLines++;
-//		};
-//		i++;
-//	};
+	var nNonEmptyLines = "";
+	var lines = nLines.length;
+	var i=0;
+	while (i<lines) {
+		if (nonEmptyLines[i]!== ""){
+			nNonEmptyLines++;
+		};
+		i++;
+	};
 	
 	
 	
@@ -37,7 +37,7 @@ function getStats(txt) {
         nChars: nChars.length,
         nWords: nWords.length,
         nLines: nLines.length,
-		fnonEmptyLines: nonEmptyLines[],
+		nonEmptyLines: nonEmptyLines.length,
         //nNonEmptyLines: nNonEmptyLines,
         averageWordLength: 3.3,
         maxLineLength: 33,
