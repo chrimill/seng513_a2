@@ -20,7 +20,7 @@ function getStats(txt) {
 	nonEmptyLines = nonEmptyLines.replace(" ", "");
 	nonEmptyLines = nonEmptyLines.replace(/\t/gm, "");
 	nonEmptyLines = nonEmptyLines.split(/\r\n|\r|\n/);
-	var nNonEmptyLines = [];
+	nNonEmptyLines = [];
 	var lines = nLines.length;
 	var i=0;
 	while (i<lines) {
