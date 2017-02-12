@@ -32,10 +32,11 @@ function getStats(txt) {
 	
 	lineLength = input_str;
 	lineLength = lineLength.split(/\r\n|\r|\n/);
-	//var i=0;
-	//while (i<lineLength.length) {
-	//	lineLength[i]= lineLength[i].length;
-	//};
+	var i=0;
+	while (i<lineLength.length) {
+		lineLength[i]= lineLength[i].length;
+		i++
+	};
 	
 	
 	
@@ -44,8 +45,8 @@ function getStats(txt) {
         nWords: nWords.length,
         nLines: nLines.length,
 		NonEmptyLines: nNonEmptyLines.length,
-        averageWordLength: 4.0,
-        maxLineLength: 7,
+        averageWordLength: 4.2,
+        maxLineLength: Math.max(...lineLength),
         palindromes: ["12321", "kayak", "mom"],
         longestWords: ["xxxxxxxxx", "123444444"],
         mostFrequentWords: ["hello(7)", "world(1)"]
