@@ -24,9 +24,9 @@ function getStats(txt) {
 	while (i<lines) {
 		if (nonEmptyLines[i]!== ""){
 			nNonEmptyLines++;
-		}
+		};
 		i++;
-	}
+	};
 	
 	
 	
