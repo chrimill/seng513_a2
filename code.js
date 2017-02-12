@@ -20,15 +20,15 @@ function getStats(txt) {
 	nonEmptyLines = nonEmptyLines.replace(" ", "");
 	nonEmptyLines = nonEmptyLines.replace(/\t/gm, "");
 	nonEmptyLines = nonEmptyLines.split(/\r\n|\r|\n/);
-//	var nNonEmptyLines = [];
-//	var lines = nLines.length;
-//	var i=0;
-//	while (i<lines) {
-//		if (nonEmptyLines[i]!= ""){
-//			nNonEmptyLines.push("1");
-//		};
-//		i++;
-//	};
+	var nNonEmptyLines = [];
+	var lines = nLines.length;
+	var i=0;
+	while (i<lines) {
+		if (nonEmptyLines[i]!= ""){
+			nNonEmptyLines.push("1");
+		};
+		i++;
+	};
 	
 	
 	
