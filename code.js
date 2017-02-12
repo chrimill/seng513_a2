@@ -49,7 +49,7 @@ function getStats(txt) {
 		sum = sum + nWords[i].length;
 		i++;
 	}
-	var aveWordLength = sum/(aWL+1);
+	var aveWordLength = [sum/(aWL+1)];
 	
 	return {
         nChars: nChars.length,
