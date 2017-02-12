@@ -42,9 +42,9 @@ function getStats(txt) {
 	};
 	
 
-	var aWL = nWords.length;
-	var i=0;
-	var sum=0;
+	//var aWL = nWords.length;
+	//var i=0;
+	//var sum=0;
 	//while (i<aWL){
 	//	sum = sum + nWords[i].length;
 	//	i++;
