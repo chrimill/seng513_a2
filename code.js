@@ -32,10 +32,10 @@ function getStats(txt) {
 	
 	lineLength = input_str;
 	lineLength = lineLength.split(/\r\n|\r|\n/);
-	var i=0;
-	while (i<lineLength.length) {
-		lineLength[i]= lineLength[i].length;
-	};
+	//var i=0;
+	//while (i<lineLength.length) {
+	//	lineLength[i]= lineLength[i].length;
+	//};
 	
 	
 	
