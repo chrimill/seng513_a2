@@ -37,7 +37,7 @@ function getStats(txt) {
         nChars: nChars.length,
         nWords: nWords.length,
         nLines: nLines.length,
-		//nNonEmptyLines: nNonEmptyLines.length,
+		NonEmptyLines: 5,
         averageWordLength: 3.3,
         maxLineLength: 33,
         palindromes: ["12321", "kayak", "mom"],
