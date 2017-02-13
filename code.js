@@ -74,7 +74,7 @@ function getStats(txt) {
         maxLineLength: Math.max(...lineLength),
         averageWordLength: aveWordLength,
         palindromes: palin,
-        longestWords: ["4xxxxxxxxx", "123444444"],
+        longestWords: ["5xxxxxxxxx", "123444444"],
         mostFrequentWords: ["hello(7)", "world(1)"]
     };
 }
