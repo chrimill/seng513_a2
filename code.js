@@ -57,6 +57,7 @@ function getStats(txt) {
 	var i=0;
 	while (i<nWords.length){
 		var temp = nWords[i].split("").reverse().join("");
+		 alert("Value exists"+temp); 
 		if (nWords[i] === temp){
 			if($.inArray(temp, nWords) > -1) {};
 			else {
@@ -79,7 +80,7 @@ function getStats(txt) {
         maxLineLength: Math.max(...lineLength),
         averageWordLength: aveWordLength,
         palindromes: pal,
-        longestWords: ["xxxxxxxxx", "123444444"],
+        longestWords: ["2xxxxxxxxx", "123444444"],
         mostFrequentWords: ["hello(7)", "world(1)"]
     };
 }
