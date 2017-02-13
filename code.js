@@ -57,16 +57,16 @@ function getStats(txt) {
 	var i=0;
 	while (i<nWords.length){
 		var temp = nWords[i].split("").reverse().join("");
-		 alert("Value exists"+temp); 
-		if (nWords[i] === temp){
-			if($.inArray(temp, nWords) > -1) {};
-			else {
-				pal.push(temp);
-			}
-
-		};
-			
+		alert("Value exists"); 
+//		if (nWords[i] === temp){
+//			if($.inArray(temp, nWords) > -1) {};
+//			else {
+//				pal.push(temp);
+//			};
+//		};
 	};
+		
+
 		i++;
 	
 	
