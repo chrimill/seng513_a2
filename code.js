@@ -70,8 +70,8 @@ function getStats(txt) {
 	longWord.sort(function(a, b){
 		return b.length - a.length || a.localeCompare(b);
 	});
-	longWord = longWord.slice(0,11);
 	uniqueLongWord = [ ...new Set(longWord) ];
+	uniqueLongWord = uniqueLongWord.slice(0,10);
 	
 	
 	
