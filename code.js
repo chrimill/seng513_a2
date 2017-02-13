@@ -12,7 +12,6 @@ function getStats(txt) {
 	nWords = nWords.replace(/\r\n|\r|\n|\t/g," ");
 	nWords = nWords.replace(/(^\s*)|(\s*$)/g,"");
 	nWords = nWords.replace(/[ ]{2,}/g," ");
-	//nWords = nWords.replace(/\s{2,}/g," ");
 	nWords = nWords.split(' ');
 	
 	nLines = input_str;
@@ -42,7 +41,6 @@ function getStats(txt) {
 	};
 	
 
-	//var aWL = nWords.length;
 	var i=0;
 	var sum=0;
 	while (i<nWords.length){
@@ -53,8 +51,8 @@ function getStats(txt) {
 	
 	
 // oh so bad	
-//	var pal= [];
-//	var i=0;
+	var pal= [];
+	var i=0;
 //	while (i<nWords.length){
 //		var temp = nWords[i].split("").reverse().join(""); 
 //		if (nWords[i] === temp){
@@ -65,7 +63,7 @@ function getStats(txt) {
 //			};
 //		};
 //		pal.push(temp);
-//		i++;
+		i++;
 //	};
 			
 	
