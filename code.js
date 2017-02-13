@@ -62,7 +62,7 @@ function getStats(txt) {
 //				pal.push(temp);
 //			};
 //		};
-//		pal.push(temp);
+		pal.push(temp);
 		i++;
 	};
 			
