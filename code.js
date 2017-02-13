@@ -64,10 +64,11 @@ function getStats(txt) {
 //				pal.push(temp);
 //			};
 //		};
+		i++;
 	};
 		
 
-		i++;
+		
 	
 	
 	
