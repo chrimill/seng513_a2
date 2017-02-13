@@ -3,7 +3,7 @@
 //
 function getStats(txt) {
     //input_str = document.getElementById("txtarea").value;
-	input_str = txt;
+	//input_str = txt;
 	
 	nChars= input_str;
 	
@@ -61,9 +61,10 @@ function getStats(txt) {
 //			if($.inArray(temp, pal) > -1) {
 //			};
 //			else {
-				pal.push(temp);
+//				pal.push(temp);
 //			};
 //		};
+		pal.push(temp);
 		i++;
 	};
 		
