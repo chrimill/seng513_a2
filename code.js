@@ -58,7 +58,7 @@ function getStats(txt) {
 		if (nWords[i].toLowerCase() === temp.toLowerCase()){
 //			if(palin.indexOf(temp.toLowerCase()) > -1) {			};
 //			else {
-//				palin.push(temp.toLowerCase());
+			palin.push(temp.toLowerCase());
 //			};
 		};
 
