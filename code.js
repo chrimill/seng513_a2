@@ -54,14 +54,13 @@ function getStats(txt) {
 	var palin= [];
 	var i=0;
 	while (i<nWords.length){
-		var temp = nWords[i].split("").reverse().join(""); 
-		if (nWords[i].toLowerCase() === temp.toLowerCase()){
-//			if(palin.indexOf(temp.toLowerCase()) > -1) {			};
-//			else {
-			palin.push(temp.toLowerCase());
-//			};
+		if (nWords[i].length > 2){			
+			var temp = nWords[i].split("").reverse().join(""); 
+			if (nWords[i].toLowerCase() === temp.toLowerCase()){
+			
+				palin.push(temp.toLowerCase());
+			};
 		};
-
 		i++;
 	};
 			
