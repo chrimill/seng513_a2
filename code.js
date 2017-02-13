@@ -64,7 +64,12 @@ function getStats(txt) {
 		i++;
 	};
 	var uniquePalin = [ ...new Set(palin) ];
-			
+		
+
+	longWord = nWords;
+	longWord.sort(function(a, b){
+		return b.length - a.length || a.localeCompare(b);
+	});
 	
 	return {
         nChars: nChars.length,
@@ -75,8 +80,8 @@ function getStats(txt) {
         maxLineLength: Math.max(...lineLength),
         averageWordLength: aveWordLength,
         palindromes: uniquePalin,
-        longestWords: ["6xxxxxxxxx", "123444444"],
-        mostFrequentWords: ["hello(7)", "world(1)"]
+        longestWords: longWord,
+        mostFrequentWords: ["hello(15)", "world(1)"]
     };
 }
 
