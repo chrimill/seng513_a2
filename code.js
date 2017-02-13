@@ -42,14 +42,33 @@ function getStats(txt) {
 	};
 	
 
-	var aWL = nWords.length;
+	//var aWL = nWords.length;
 	var i=0;
 	var sum=0;
-	while (i<aWL){
+	while (i<nWords.length){
 		sum = sum + nWords[i].length;
 		i++;
-	}
-	var aveWordLength = (sum/aWL);
+	};
+	var aveWordLength = (sum/nWords.length);
+	
+	
+// oh so bad	
+	var pal= [];
+	var i=0;
+	while (i<nWords.length){
+		var temp = nWords[i].split("").reverse().join("");
+		if (nWords[i] === temp){
+			if($.inArray(temp, nWords) > -1) {};
+			else {
+				pal.push(temp);
+			}
+
+		};
+			
+	};
+		i++;
+	
+	
 	
 	return {
         nChars: nChars.length,
@@ -59,7 +78,7 @@ function getStats(txt) {
 		NonEmptyLines: nNonEmptyLines.length,
         maxLineLength: Math.max(...lineLength),
         averageWordLength: aveWordLength,
-        palindromes: ["12321", "kayak", "mom"],
+        palindromes: pal,
         longestWords: ["xxxxxxxxx", "123444444"],
         mostFrequentWords: ["hello(7)", "world(1)"]
     };
