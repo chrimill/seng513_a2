@@ -56,12 +56,10 @@ function getStats(txt) {
 	while (i<nWords.length){
 		var temp = nWords[i].split("").reverse().join(""); 
 		if (nWords[i].toLowerCase() === temp.toLowerCase()){
-			if(palin.indexOf(temp.toLowerCase()) > -1) {
-				
-			};
-			else {
-				palin.push(temp.toLowerCase());
-			};
+//			if(palin.indexOf(temp.toLowerCase()) > -1) {			};
+//			else {
+//				palin.push(temp.toLowerCase());
+//			};
 		};
 
 		i++;
