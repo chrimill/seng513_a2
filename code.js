@@ -2,8 +2,8 @@
 // this is just a stub for a function you need to implement
 //
 function getStats(txt) {
-    input_str = document.getElementById("txtarea").value;
-	
+    //input_str = document.getElementById("txtarea").value;
+	input_str = txt;
 	
 	nChars= input_str;
 	
@@ -57,13 +57,13 @@ function getStats(txt) {
 	var i=0;
 	while (i<nWords.length){
 		var temp = nWords[i].split("").reverse().join(""); 
-		if (nWords[i] === temp){
-			if($.inArray(temp, pal) > -1) {
-			};
-			else {
+//		if (nWords[i] === temp){
+//			if($.inArray(temp, pal) > -1) {
+//			};
+//			else {
 				pal.push(temp);
-			};
-		};
+//			};
+//		};
 		i++;
 	};
 		
