@@ -57,9 +57,11 @@ function getStats(txt) {
 	var i=0;
 	while (i<nWords.length){
 		var temp = nWords[i].split("").reverse().join("");
-		//alert("Value exists"); 
+		alert(temp); 
 		if (nWords[i] === temp){
-			if($.inArray(temp, nWords) < 0) {
+			if($.inArray(temp, nWords) > -1) {
+			};
+			else {
 				pal.push(temp);
 			};
 		};
@@ -80,7 +82,7 @@ function getStats(txt) {
         maxLineLength: Math.max(...lineLength),
         averageWordLength: aveWordLength,
         palindromes: pal,
-        longestWords: ["2xxxxxxxxx", "123444444"],
+        longestWords: ["3xxxxxxxxx", "123444444"],
         mostFrequentWords: ["hello(7)", "world(1)"]
     };
 }
