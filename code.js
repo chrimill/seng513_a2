@@ -63,6 +63,7 @@ function getStats(txt) {
 		};
 		i++;
 	};
+	var uniquePalin = [ ...new Set(palin) ];
 			
 	
 	return {
@@ -73,8 +74,8 @@ function getStats(txt) {
 		NonEmptyLines: nNonEmptyLines.length,
         maxLineLength: Math.max(...lineLength),
         averageWordLength: aveWordLength,
-        palindromes: palin,
-        longestWords: ["5xxxxxxxxx", "123444444"],
+        palindromes: uniquePalin,
+        longestWords: ["6xxxxxxxxx", "123444444"],
         mostFrequentWords: ["hello(7)", "world(1)"]
     };
 }
