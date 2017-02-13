@@ -74,6 +74,21 @@ function getStats(txt) {
 	uniqueLongWord = uniqueLongWord.slice(0,10);
 	
 	
+	var countWord = [];
+	var i = 0;
+	var counter = 1;
+	var j = 0;
+	while (i<longWord.length){
+		if (longWord[i] === longWord[i+1]){
+			counter++;
+		};
+		else{
+			countWord[j]= [longWord[i],counter]
+			counter = 1;
+			j++;
+		};
+		i++;
+	};
 	
 	return {
         nChars: nChars.length,
@@ -85,7 +100,7 @@ function getStats(txt) {
         averageWordLength: aveWordLength,
         palindromes: uniquePalin,
         longestWords: uniqueLongWord,
-        mostFrequentWords: ["hello(15)", "world(1)"]
+        mostFrequentWords: countWord
     };
 }
 
