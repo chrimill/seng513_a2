@@ -70,17 +70,21 @@ function getStats(txt) {
 	longWord.sort(function(a, b){
 		return b.length - a.length || a.localeCompare(b);
 	});
+	longWord = longWord.slice(0,10);
+	uniqueLongWord = [ ...new Set(longWord) ];
+	
+	
 	
 	return {
         nChars: nChars.length,
         nWords: nWords.length,
-		Words: nWords,
+		//Words: nWords,
         nLines: nLines.length,
 		NonEmptyLines: nNonEmptyLines.length,
         maxLineLength: Math.max(...lineLength),
         averageWordLength: aveWordLength,
         palindromes: uniquePalin,
-        longestWords: longWord,
+        longestWords: uniqueLongWord,
         mostFrequentWords: ["hello(15)", "world(1)"]
     };
 }
