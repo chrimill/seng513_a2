@@ -53,8 +53,8 @@ function getStats(txt) {
 // oh so bad	
 	var pal= [];
 	var i=0;
-//	while (i<nWords.length){
-//		var temp = nWords[i].split("").reverse().join(""); 
+	while (i<nWords.length){
+		var temp = nWords[i].split("").reverse().join(""); 
 //		if (nWords[i] === temp){
 //			if($.inArray(temp, pal) > -1) {
 //			};
@@ -64,7 +64,7 @@ function getStats(txt) {
 //		};
 //		pal.push(temp);
 		i++;
-//	};
+	};
 			
 	
 	return {
