@@ -51,7 +51,7 @@ function getStats(txt) {
 	
 	
 // oh so bad	
-	var pal= [];
+	var palin= [];
 	var i=0;
 	while (i<nWords.length){
 		var temp = nWords[i].split("").reverse().join(""); 
@@ -62,7 +62,7 @@ function getStats(txt) {
 //				pal.push(temp);
 //			};
 //		};
-		pal.push(temp);
+		palin.push(temp);
 		i++;
 	};
 			
@@ -75,8 +75,8 @@ function getStats(txt) {
 		NonEmptyLines: nNonEmptyLines.length,
         maxLineLength: Math.max(...lineLength),
         averageWordLength: aveWordLength,
-//        palindromes: pal,
-        longestWords: ["3xxxxxxxxx", "123444444"],
+        palindromes: palin,
+        longestWords: ["4xxxxxxxxx", "123444444"],
         mostFrequentWords: ["hello(7)", "world(1)"]
     };
 }
