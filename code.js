@@ -2,8 +2,8 @@
 // this is just a stub for a function you need to implement
 //
 function getStats(txt) {
-    input_str = document.getElementById("txtarea").value;
-	//input_str = txt;
+    //input_str = document.getElementById("txtarea").value;
+	input_str = txt;
 	
 	nChars= input_str;
 	
