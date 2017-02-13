@@ -56,10 +56,9 @@ function getStats(txt) {
 	var pal= [];
 	var i=0;
 	while (i<nWords.length){
-		var temp = nWords[i].split("").reverse().join("");
-		alert(temp); 
+		var temp = nWords[i].split("").reverse().join(""); 
 		if (nWords[i] === temp){
-			if($.inArray(temp, nWords) > -1) {
+			if($.inArray(temp, pal) > -1) {
 			};
 			else {
 				pal.push(temp);
